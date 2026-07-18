@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Для наглядности уязвимостей отключаем некоторые предупреждения компилятора
 add_compile_options(-w)
+add_compile_options(-Werror)
 
 add_executable(security_test
     src/main.cpp
